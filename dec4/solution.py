@@ -44,10 +44,14 @@ def checkPairsTwo(line):
     first = line[0:line.index(",")]
     second = line[line.index(",") + 1:]
 
+    for i in range(0,1):
+        pair_one[i] = int(pair_one[i])
+        pair_two[i] = int(pair_one[i])
+
     pair_one = [first[0:first.index("-")], first[first.index("-") + 1:]]
     pair_two = [second[0:second.index("-")], second[second.index("-") + 1:len(second)-1]]
 
-    if (int(pair_one[0]) <= int(pair_two[0]) and int(pair_one[1]) >= int(pair_two[0])) or (int(pair_two[0]) <= int(pair_one[1]) and int(pair_two[1]) >= int(pair_one[1])):
+    if (pair_one[0] in range(pair_two[0], pair_two[1])) or :
         return 1
     else:
         return 0
