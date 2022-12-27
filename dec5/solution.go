@@ -3,8 +3,8 @@ package main
 import (
   "bufio"
   "fmt"
-//  "log"
   "os"
+  "stack/stack.go"
 )
 
 func main() {
